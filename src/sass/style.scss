@@ -1,0 +1,372 @@
+@import './variables';
+@import './projects.scss';
+@import './project-details.scss';
+@import './blog.scss';
+@import './about.scss';
+@import './contact.scss';
+
+@font-face{
+    font-family: 'cairo';
+    src: url(../fonts/Cairo-Regular.ttf);
+} 
+body{
+    font-family: 'cairo', sans-serif;
+    overflow-x: hidden;
+}
+.container-fluid{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    overflow-x: hidden;
+}
+.navbar{
+    background-color: #fff;
+    font-weight: bold;
+    .navbar-brand{
+        padding: 0 !important;
+    }
+    .nav-link{
+        color: #000;
+        margin-right: 5px;
+        transition-property: background-color;
+        transition-property: .5s ;
+
+
+        &:hover,
+        &:focus,
+        &:active{
+            color: $main-color;
+            background-color: $costum-color;
+            border-bottom: 2px solid $main-color;
+            margin-bottom: -2px;
+            
+            
+        }
+        &.active{
+            color: $main-color;
+            border-bottom: 2px solid $main-color;
+            margin-bottom: -2px;  
+        }
+    }
+}
+.carousel{
+    
+    .carousel-item{
+        position: relative;
+        img {
+            height: 450px;
+        }
+        .overlay{
+            background-color: rgba(65,155,155,0.5);
+            position: absolute;
+            top: 0;
+            right:0;
+            height: 100%;
+            width: 100%;
+            display: flex !important;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .carousel-caption{
+        
+        
+        h1{
+            color: #fff;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        p{
+            color: #fff;
+            font-size: 22px;
+        }
+       
+    }
+    .carousel-indicators{
+        button{
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+
+            &.active{
+                background-color: $main-color;
+            }
+        }
+    }
+
+}
+.custom-btn{
+    color: $main-color;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid $main-color;
+    margin-top: 5px;
+    transition: all .5s ease;
+
+    &:hover{
+        background-color: $main-color;
+        color: #fff;
+    }
+}
+.who-are-we{
+    padding: 40px 0;
+
+    .info{
+        
+        p{
+            width: 60%;
+            margin-right: 20%;
+            line-height: 30px;
+
+            .company-name{
+                color: $main-color;
+            }
+        }
+        
+    }
+}
+.custom-btn-main{
+    padding: 15px 50px;
+    color: #fff;
+    background-color: $main-color;
+    font-weight: bold;
+
+    &:hover,
+    &:focus{
+        color: #000;
+    }
+}
+.last-work{
+    background-color: #FFFFCC;
+    padding: 50px 0;
+
+    #lastworkControls{
+        .compo{
+            position: relative;
+            .caption{
+                position: absolute;
+                top: 0px;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background-color:rgba(65,155,155,0.5);
+                color: #fff;
+                padding: 2%;
+                display: none;
+    
+                h5{
+                    margin-bottom: 0;
+                }
+                p{
+                    margin-bottom: 5px;
+                    font-size: 14px;
+                }
+                .custom-btn{
+                    margin-top: 0;
+                }
+            }
+    
+            .project-cat{
+                position: absolute;
+                top: 10px;
+                right: 0;
+                background-color: rgba(240,240, 240, 0.75);
+                font-weight: bold;
+                padding: 10px 10px;
+                box-shadow: 0px 5px 20px 0px #202020;
+                border-bottom-left-radius: 10px;
+                border-top-left-radius: 10px;
+            }
+        }
+        .carousel-control-prev{
+            transform: translateX(160px);
+            font-size: 60px;
+            color: #202020;
+        }
+        .carousel-control-next{
+            transform: translateX(-160px);
+            font-size: 60px;
+            color: #202020;
+        }   
+    }
+}
+.product-details{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.says{
+    padding: 50px 0;
+
+    h5{
+        font-weight: bold;
+        font-size: 22px;
+        margin-top: 10px;
+    }
+    p{
+        font-size: 18px;
+    }
+    .client{
+        width: 100px;
+        height: 100px !important;
+        border-radius: 10px;
+        border: 1px solid #000;
+    }
+    .shadow{
+        padding: 20px;
+        background-color: $costum-color;
+        border: 5px solid $main-color;
+        border-radius: 20px;
+    }
+    .carousel-control-prev{
+        font-size: 30px;
+        color: #202020;
+    }
+    .carousel-control-next{
+        font-size: 30px;
+        color: #202020;
+    }
+}
+.our-clients{
+    padding: 30px 0;
+    background-color: #419B9B;
+
+    h2{
+        color: #fff;
+    }
+
+    .clients{
+        margin-top: 20px;
+    }
+}
+
+.lastest-twets{
+    padding: 30px 0;
+    .twets{
+        .card{
+            width: 100%;
+
+            .card-body{
+                padding: 20px;
+                    border: 1px solid #CCCCCC;
+                    border-radius: 5px;
+                    transform: translateY(-30px);
+                    background-color: #fff;
+                    width: 90%;
+                    right: 5%;
+                    position: relative;
+
+                    p{
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                    }
+
+                .card-title{
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+                
+                .card-text {
+                    font-size: 14px;
+                }
+                    
+        
+                }
+            }
+        }
+    }
+
+footer{
+    height: 450px;
+    background-color: #393939;
+
+    h2{
+        color: $costum-color;
+        padding-top: 20px;
+    }
+    .line{
+        width: 5%;
+        border-top: 3px solid $costum-color;
+        opacity: 1;
+    }
+    #footer-nav{
+        padding-top: 20px;
+        
+        .list-inline-item{
+            a{
+                color:#BBBBBB;
+                text-decoration: none;
+                margin-right: 15px;
+                font-size: 90%;
+ 
+                &:hover,
+                &:focus{
+                 color: $costum-color;
+                }
+             }
+        }
+           
+    }
+
+    .line2{
+        width: 60%;
+        border-top: 3px solid $costum-color;
+        opacity: 1;
+    }    
+    .mail-form{
+        padding-bottom: 20px;
+        label{
+            color: $costum-color;
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: block;
+        }
+        input{
+            width: 200px;
+            height: 40px;
+            display: inline-block;
+            color: #BBBBBB;
+            background-color: #202020;
+            border: 0;
+            text-align: right;
+            box-shadow: none;
+
+            &:focus {
+                border-color: $costum-color;
+                box-shadow: 0 0 2px 0 $costum-color;
+                background-color: #202020;
+                color: $costum-color;
+            }
+        }
+        .mail-form-btn{
+            height:40px;
+            padding-right: 10px;
+            padding-left: 10px;
+            border: 0;
+            border-radius: 1px;
+            transform: translateX(3px);
+        }
+    }
+    .copyright{
+        color: #BBBBBB;
+        font-size: 90%;
+        text-decoration: none;
+    }
+}    
+
+@media (max-width:991px){
+    .product-details{
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .compo{
+        margin-top: 10px;
+    }
+}

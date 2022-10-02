@@ -1,0 +1,54 @@
+@import './variables';
+
+body{
+  overflow-x: hidden;
+}
+  .btn, button{
+    &:focus,
+    &:active{
+      outline: none !important;
+      box-shadow: none !important;
+    }
+  }
+   
+  #image-gallery{
+    .modal-footer{
+      display: block;
+    }
+  }  
+  
+  .thumb{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .gallery{
+    padding: 30px 0;
+    .card{
+      background-color: #fff;
+      border: 1px solid $costum-color;
+      .card-header{
+        background-color: #fff;
+        border-bottom: 1px solid $costum-color;
+        padding: 15px 10px;
+        h2{
+          color: $main-color;
+        }
+        
+        .custom-btn{
+          float: left;
+        }
+      }
+      .card-body{
+        padding: 20px 10px;
+        color: black;
+        p{
+          font-size: 16px;
+        }
+      }
+      
+    }
+  }
+  .date{
+    color: rgb(105, 104, 104);
+  }

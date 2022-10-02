@@ -1,0 +1,38 @@
+.banner{
+    .about-img{
+        background-image: url(../images/banner-about.jpg) !important;
+    }
+}
+
+.team{ 
+    padding: 30px 0;
+    .team-card{
+        border: 2px solid $costum-color;
+        padding: 30px 10px;
+        width: 80%;
+        .img{
+            margin-bottom: 20px;
+        }
+        
+        .team-text{
+            span{
+                color: gray;
+                font-weight: bold;
+            } 
+        }
+        .team-line{
+            width: 10%;
+            border-top-color: $main-color;
+            border-top: 1px solid $main-color;
+            margin: 10px auto;
+        }
+        .team-text{
+            color: gray;
+            padding: 10px 10px;
+        }
+        .social-icons{
+            float: none !important;
+            padding-right: 0;
+        }
+    }
+}

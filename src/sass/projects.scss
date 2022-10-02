@@ -1,0 +1,60 @@
+@import './variables';
+@font-face{
+    font-family: 'cairo';
+    src: url(../fonts/Cairo-Regular.ttf);
+}
+
+.banner{
+    .banner-img{
+        background-image: url(../images/projects-banner.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 250px;
+        position: relative;
+
+        .overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 250px;
+            background-color: rgba(65,155,155,0.5);
+            width:100%;
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+
+            h1{
+                color: #fff;
+                font-weight: bold;
+            }
+        }
+    }
+}
+.projects{
+    padding: 20px 0;
+    .card{ 
+        border-radius: 1px;
+        width: 90%;
+        
+        .card-img{
+            position: relative;
+
+            .project-cat{
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                background-color: $costum-color;
+                padding: 10px;
+            }
+            .card-body{
+                padding: 2%;
+                .card-title{
+                    font-weight: 800;
+                    color: $main-color;
+                }
+            }
+        }
+    }
+}
+
